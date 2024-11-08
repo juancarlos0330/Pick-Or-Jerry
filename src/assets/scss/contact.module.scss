@@ -1,0 +1,125 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
+
+  .jerryView {
+    margin-top: 50px;
+
+    @media (max-width: 1024px) {
+      margin-top: 125px;
+    }
+
+    img {
+      width: 1050px;
+
+      @media (max-width: 1024px) {
+        width: 410px;
+      }
+    }
+  }
+
+  .contactView {
+    position: absolute;
+    z-index: 1;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @media (max-width: 1024px) {
+      top: 40px;
+    }
+
+    img {
+      width: 160px;
+
+      @media (max-width: 1024px) {
+        width: 100px;
+      }
+    }
+  }
+
+  .emailView {
+    position: absolute;
+    z-index: 1;
+    top: 135px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-decoration: none;
+
+    @media (max-width: 1024px) {
+      top: 85px;
+    }
+
+    img {
+      width: 360px;
+
+      @media (max-width: 1024px) {
+        width: 260px;
+      }
+    }
+  }
+
+  .linkView {
+    position: absolute;
+    z-index: 1;
+    top: 270px;
+    right: calc(50% + 15px);
+
+    @media (max-width: 1024px) {
+      top: 155px;
+      right: calc(50% - 52px);
+    }
+
+    img {
+      width: 300px;
+
+      @media (max-width: 1024px) {
+        width: 190px;
+      }
+    }
+  }
+
+  .arrowBottomView {
+    position: absolute;
+    z-index: 1;
+    top: 325px;
+    right: calc(50% - 10px);
+
+    @media (max-width: 1024px) {
+      top: 190px;
+      right: calc(50% - 55px);
+    }
+
+    img {
+      width: 110px;
+
+      @media (max-width: 1024px) {
+        width: 60px;
+      }
+    }
+  }
+
+  .auditView {
+    position: absolute;
+    z-index: 1;
+    top: 380px;
+    right: calc(50% + 105px);
+    text-decoration: none;
+
+    @media (max-width: 1024px) {
+      top: 217px;
+      right: calc(50% + 7px);
+    }
+
+    img {
+      width: 150px;
+
+      @media (max-width: 1024px) {
+        width: 90px;
+      }
+    }
+  }
+}

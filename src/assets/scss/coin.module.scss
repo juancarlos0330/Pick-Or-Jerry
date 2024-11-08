@@ -1,0 +1,206 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
+
+  .faceimg {
+    width: 650px;
+    display: block;
+    opacity: 1;
+
+    @media (max-width: 1024px) {
+      width: 370px;
+    }
+  }
+
+  .popTelegramView {
+    position: absolute;
+    z-index: 1;
+    text-decoration: none;
+
+    top: 135px;
+    left: calc(50% - 145px);
+    transform: translateX(-50%);
+
+    @media (max-width: 1024px) {
+      top: 78px;
+      left: calc(50% - 76px);
+    }
+
+    .popIcon {
+      width: 60px;
+      display: block;
+
+      @media (max-width: 1024px) {
+        width: 35px;
+      }
+    }
+
+    .popHoverIcon {
+      width: 60px;
+      display: none;
+      @media (max-width: 1024px) {
+        width: 35px;
+      }
+    }
+
+    &:hover {
+      .popIcon {
+        display: none;
+      }
+
+      .popHoverIcon {
+        display: block;
+      }
+    }
+  }
+
+  .popTwitterView {
+    position: absolute;
+    z-index: 1;
+    text-decoration: none;
+
+    top: 135px;
+    right: calc(50% - 140px);
+    transform: translateX(50%);
+
+    @media (max-width: 1024px) {
+      top: 78px;
+      right: calc(50% - 80px);
+    }
+
+    .popIcon {
+      width: 60px;
+      display: block;
+
+      @media (max-width: 1024px) {
+        width: 35px;
+      }
+    }
+
+    .popHoverIcon {
+      width: 60px;
+      display: none;
+      @media (max-width: 1024px) {
+        width: 35px;
+      }
+    }
+
+    &:hover {
+      .popIcon {
+        display: none;
+      }
+
+      .popHoverIcon {
+        display: block;
+      }
+    }
+  }
+
+  .noseView {
+    cursor: pointer;
+    position: absolute;
+    top: 217px;
+    left: calc(50% - 29px);
+
+    .noseimg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 87px;
+      opacity: 1;
+      transition: 0.2s opacity ease-in-out;
+
+      @media (max-width: 1024px) {
+        width: 51px;
+      }
+    }
+
+    .nosehoverimg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 87px;
+      opacity: 0;
+      transition: 0.2s opacity ease-in-out;
+
+      @media (max-width: 1024px) {
+        width: 51px;
+      }
+    }
+
+    @media (max-width: 1024px) {
+      top: 121px;
+      left: calc(50% - 17px);
+    }
+
+    &:hover {
+      .noseimg {
+        opacity: 0;
+      }
+
+      .nosehoverimg {
+        opacity: 1;
+      }
+    }
+  }
+
+  .arrowView {
+    z-index: 1;
+    position: absolute;
+    top: 295px;
+    left: calc(50% + 70px);
+
+    @media (max-width: 1024px) {
+      top: 176px;
+      left: calc(50% + 38px);
+    }
+
+    .arrowImg {
+      width: 350px;
+
+      @media (max-width: 1024px) {
+        width: 168px;
+      }
+    }
+  }
+
+  .pressTextView {
+    position: absolute;
+    top: 500px;
+    left: calc(50% + 310px);
+    z-index: 1;
+
+    @media (max-width: 1024px) {
+      top: 278px;
+      left: calc(50% + 150px);
+    }
+
+    img {
+      width: 200px;
+
+      @media (max-width: 1024px) {
+        width: 85px;
+      }
+    }
+  }
+
+  .jerryTextView {
+    margin-top: -80px;
+    z-index: 1;
+
+    @media (max-width: 1024px) {
+      margin-top: -42px;
+    }
+
+    img {
+      width: 650px;
+
+      @media (max-width: 1024px) {
+        width: 410px;
+      }
+    }
+  }
+}
